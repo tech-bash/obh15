@@ -1,150 +1,86 @@
-// console.log("first batch 1");
-// // // is mainly used to output the information that u particulalry want 
+// let result = 56;
 
-// variables 
+// let result2 = 1; // (!result2)
 
-// Block's scope ..
+// if(result) console.log(result); // 56
 
-// let variable = 60;
-// console.log(variable)
+// if(!result) console.log(result) // nothing
 
-// {
+// console.log(!result) // false
 
-// let variable = 70;
-// console.log(variable)
-//     {
-//     let variable = 80;
-//     console.log(variable)
-//     }
-    
-// // }
-
-// //using let 
-// let test2 = 70; // declaring + defining 
-
-// {
-// let test2 = "string";
-// console.log(test2)
+// if(!result2 && result) {
+//     console.log(result);// 56
+//     console.log(result2) //78
 // }
-// console.log(test2)
 
-//using var and let 
+// else if(!result2 && result) console.log(result) // na
 
-// var test = 50; // scope sized is different
-// console.log(test)
+// else if(result2 && !result) console.log(result2) // na
 
-// // let test = "I'm using var"
-// console.log(test)
+// else if(result2 || result) {console.log(result) // 56
 
-// test = "batch 15"
-// console.log(test)
+//  // true
+// }
 
+// console.log(!result2)
 
-//using const 
+// result = [] // falsly // [] = array & {} = objects
 
-// const test = "string 1"
+// result2 = 55
 
-// console.log(test);
-//u
+// if(result){
+//     console.log(result2)
+// }
 
-
-// u {
-// //     const test = "string 3";
-// //     console.log(test);
-// u//         const test = "string 4"
-// //         console.log(test)
-// /u/     }
-// // }
-
-// test = 'ca';
-
-// example = 90;
-//uuuuuuuuuuuuuu
-// result = "A bird was just born";
-
-// answer = test;
-// //lhs = rhs
-
-// console.log(typeof test);
-// console.log(typeof example);
-// console.log(typeof result);
-//
-// const len = "string";
-// let width = "string1";
-//console.log(typeof len)
-// console.log(typeof width)
-
-// result = len *  width; 
-
-// // + = global operator, it can add numbers, strings, objects when used properly
-// // except + all the other operators i.e mathematical operator like -, %, *, ** are treated as math
-// // matical operators only
-
-// console.log(typeof result)
-
-// // console.log(result);
-// let a = 8
-// let b = 9
-
-// console.log((a + b) / b); // 1.8
-// console.log(a + b / b); // 9
-// console.log(a + ( b / b)); // 9
+//  console.log(!result)
 
 
-// let score = 5
+// ! => this will convert a number or string etc into a boolean value
 
-// score += 7; // score = score + 7
+// "" = fasly, [] = truly, {} = truly **
 
-// // +=, *=, /=, -=   ===> Compound assignment operators
+// answer = "string"
+// console.log(answer)
+// console.log(!answer)
 
-// score *= 2; // score = score * 2
+// answer1 = "" //false 
+// console.log(answer1)
+// console.log(!answer1)
 
-// score /= 20;
-
-// score -= 10;
-
-// console.log(score);
-
-
-// console.log(Math.floor(4.5))
-// console.log(Math.floor(4.9))
-// console.log(Math.floor(-4.2)) // rounds off to the smallest integer
-
-// console.log(Math.round(4.5))
-// console.log(Math.round(4.9))
-// console.log(Math.round(4.2))
-// console.log(Math.round(-4.5)) // rounds off to the nearest number
-
-// console.log(Math.ceil(4));
-// console.log(Math.ceil(4.6))
-// console.log(Math.ceil(4.2))
-// console.log(Math.ceil(4.9))
-// console.log(Math.ceil(4.5)) // rounds off to the largest value or number
+// result = 1
+// console.log(result)
+// console.log(!result)
 
 
-// let a = 78.909909; // hard coded 
+// console.log(!answer && result) // false && 1
+// console.log(!answer1 || !result) // true || false
 
-// console.log(a.toFixed(3))
 
-// let result  = true; // 1
+result1 = 1
+result2 = 79
 
-// let answer = false; // 0
+if(result1) {
+    if(result2) // if result2 == true 
+    {
+     console.log(result1 + result2)   
 
-// console.log(typeof result)
-// console.log(typeof answer)
+    //  if() { only for the ones who are able to clear the two nested if conditions ..... **
 
-let result = 49;
+    //  }
+    //  else {
 
-answer = true;
-
-if(result >= 50 || answer) { // by default if conditional statements check for booleans if(true)
-    console.log("Pavan had 100% in 12th")
-} 
-
-else if(result == 9) {
-    console.log("passed")
+    //  }
+    }
+    else {
+        console.log(result2)
+    }
 }
 
 else {
-    console.log("failed")
+    if() {
+
+    }
+    else {
+
+    }
 }
