@@ -1,86 +1,73 @@
-// let result = 56;
+// let result = 5;
 
-// let result2 = 1; // (!result2)
+// == -> loose equality i.e doesn't check the type of the variables and gives unwanted type results
+// === -> strict equality i.e it checks the type of variables along with the values that the variables are holding
 
-// if(result) console.log(result); // 56
-
-// if(!result) console.log(result) // nothing
-
-// console.log(!result) // false
-
-// if(!result2 && result) {
-//     console.log(result);// 56
-//     console.log(result2) //78
+// if(5 == "5") {
+//     console.log("correct")
 // }
 
-// else if(!result2 && result) console.log(result) // na
+// let isAdmin = true;
+// let isLogin = true;
+// let isHavingKey = false
 
-// else if(result2 && !result) console.log(result2) // na
+// if(isLogin) {
+//     if(isAdmin) {
+//         if(isHavingKey) {
+//         console.log("You are admin")
+//         } else {console.log("you don't have a key")}
+//     }
+//     if(5 == "5") console.log(5)
 
-// else if(result2 || result) {console.log(result) // 56
+//     if(6 == "6") console.log(6)
 
-//  // true
+
+//     else {
+//         console.log("you are user")
+//     }
 // }
 
-// console.log(!result2)
-
-// result = [] // falsly // [] = array & {} = objects
-
-// result2 = 55
-
-// if(result){
-//     console.log(result2)
+// else {
+//     console.log("please log in")
 // }
 
-//  console.log(!result)
+// if(6%2 !== 0) {
+//     console.log("Even")
+// }
+
+// else{
+//     console.log("odd")
+// }
+
+// let result  = 
+
+// ternary operator
 
 
-// ! => this will convert a number or string etc into a boolean value
 
-// "" = fasly, [] = truly, {} = truly **
+// if(result%3 === 0) {
+//     console.log("is divisible")
+// }
+// else console.log("not divisible")
 
-// answer = "string"
+// result%3 !== 0  ? console.log("is divisible") : console.log("not divisible"); // this is direct output
+// let result = false
+// // condition ? true : false
+// !result ? console.log("amaan is a good student") : console.log("amaan is a bad student")
+
+// let answer =  result%3 === 0 ? ("is divisible") : ("not divisible");
+
 // console.log(answer)
-// console.log(!answer)
 
-// answer1 = "" //false 
-// console.log(answer1)
-// console.log(!answer1)
+// result = 99
 
-// result = 1
-// console.log(result)
-// console.log(!result)
+// let answer = result > 0 ?  (result%9) === 0 ? "divisible by 9"   : "not divisible by 9" : "negative number"        ;
+// console.log(answer)
 
+let a = 10
+let b  = 0
+let symbol = "/";
 
-// console.log(!answer && result) // false && 1
-// console.log(!answer1 || !result) // true || false
+let answer = (a >0 && b >= 0) ? (symbol === "*") ? a*b : (symbol === "+") ? a+b : (symbol === "-") ? a -b : (symbol ==="/") ? a/b : "it is done" :  "not positive numbers" 
 
-
-result1 = 1
-result2 = 79
-
-if(result1) {
-    if(result2) // if result2 == true 
-    {
-     console.log(result1 + result2)   
-
-    //  if() { only for the ones who are able to clear the two nested if conditions ..... **
-
-    //  }
-    //  else {
-
-    //  }
-    }
-    else {
-        console.log(result2)
-    }
-}
-
-else {
-    if() {
-
-    }
-    else {
-
-    }
-}
+console.log(answer)
