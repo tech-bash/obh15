@@ -1,73 +1,63 @@
-// let result = 5;
+// let operator = "/";
 
-// == -> loose equality i.e doesn't check the type of the variables and gives unwanted type results
-// === -> strict equality i.e it checks the type of variables along with the values that the variables are holding
-
-// if(5 == "5") {
-//     console.log("correct")
+// let a = 10
+// let b = 90
+// switch(operator) {
+//     case "*":
+//         console.log(a*b);
+//         break;                    // if(day == 1) console.log("monday")
+//     case "+":
+//         console.log("a+b");
+//         break;                         //else if(day ==2) console.log("tuesday")
+//     case "-":
+//         console.log(a-b);
+//         break;
+//     case "/":
+//         if(b>0) {
+//             console.log(a/b)
+//         }
+//         else {
+//             console.log("b is not a valid number")
+//         }
+//         break;
+//     default: //else
+//         console.log("It is doom's day")
 // }
 
-// let isAdmin = true;
-// let isLogin = true;
-// let isHavingKey = false
-
-// if(isLogin) {
-//     if(isAdmin) {
-//         if(isHavingKey) {
-//         console.log("You are admin")
-//         } else {console.log("you don't have a key")}
-//     }
-//     if(5 == "5") console.log(5)
-
-//     if(6 == "6") console.log(6)
+// console.log(1)
+// console.log(2)
+// console.log(3)
+// console.log(4)
+// console.log(5)
+// i = 90;
+// console.log(typeof i)
 
 
-//     else {
-//         console.log("you are user")
-//     }
+// for( i = 0 ;i < 100 ; i = i + 1 ) {
+//     console.log(i)
+// }
+// initialize i for the while loop
+
+
+// while(i>=50) { // i = 101  while(false)
+//      // you'll write your logic or what you want to do 
+//      console.log(i);
+
+//      // update the condtional value
+
 // }
 
-// else {
-//     console.log("please log in")
+// i = 1;
+
+// do {
+// console.log(i)
+
+// i ++;
 // }
+// while(i<50)
 
-// if(6%2 !== 0) {
-//     console.log("Even")
-// }
+// + -
 
-// else{
-//     console.log("odd")
-// }
-
-// let result  = 
-
-// ternary operator
-
-
-
-// if(result%3 === 0) {
-//     console.log("is divisible")
-// }
-// else console.log("not divisible")
-
-// result%3 !== 0  ? console.log("is divisible") : console.log("not divisible"); // this is direct output
-// let result = false
-// // condition ? true : false
-// !result ? console.log("amaan is a good student") : console.log("amaan is a bad student")
-
-// let answer =  result%3 === 0 ? ("is divisible") : ("not divisible");
-
-// console.log(answer)
-
-// result = 99
-
-// let answer = result > 0 ?  (result%9) === 0 ? "divisible by 9"   : "not divisible by 9" : "negative number"        ;
-// console.log(answer)
-
-let a = 10
-let b  = 0
-let symbol = "/";
-
-let answer = (a >0 && b >= 0) ? (symbol === "*") ? a*b : (symbol === "+") ? a+b : (symbol === "-") ? a -b : (symbol ==="/") ? a/b : "it is done" :  "not positive numbers" 
-
-console.log(answer)
+a = +false
+console.log(typeof a)
+console.log(a)
