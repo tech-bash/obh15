@@ -1,63 +1,44 @@
-// let operator = "/";
+// // let variable = "st";
 
-// let a = 10
-// let b = 90
-// switch(operator) {
-//     case "*":
-//         console.log(a*b);
-//         break;                    // if(day == 1) console.log("monday")
-//     case "+":
-//         console.log("a+b");
-//         break;                         //else if(day ==2) console.log("tuesday")
-//     case "-":
-//         console.log(a-b);
-//         break;
-//     case "/":
-//         if(b>0) {
-//             console.log(a/b)
-//         }
-//         else {
-//             console.log("b is not a valid number")
-//         }
-//         break;
-//     default: //else
-//         console.log("It is doom's day")
-// }
-
-// console.log(1)
-// console.log(2)
-// console.log(3)
-// console.log(4)
-// console.log(5)
-// i = 90;
-// console.log(typeof i)
+// // console.log(typeof variable)
 
 
-// for( i = 0 ;i < 100 ; i = i + 1 ) {
-//     console.log(i)
-// }
-// initialize i for the while loop
+// // /// + - are called unary operators these are used for converting a given type into a number
+// // // only if the type is a number or a boolean
 
 
-// while(i>=50) { // i = 101  while(false)
-//      // you'll write your logic or what you want to do 
-//      console.log(i);
+// // ++ --
 
-//      // update the condtional value
+// let a = 50;
+// let d = 60
+//  b = a++ // 50
 
-// }
+//  b++ // 51
+//  c = ++b + b++ + b++; // 52 + 52 + 53
+// //  // b= 53
+// //  console.log(b)
 
-// i = 1;
+ 
+//  d = b--; // d = 53 
+//  // b= 52
+ 
+//  b += d++ - --d; // b b + 53 - 53
+//  ++d;
+//  console.log(d++) //54
+//  console.log(d)//
+ 
 
-// do {
-// console.log(i)
+let sum = 0 ;
+let sum1 = 0
 
-// i ++;
-// }
-// while(i<50)
+for(let i = 1, j = 5; i<= 10,j< 10; ++i, ++j) {
+    sum = sum + i;
+    sum1 = sum1 + i
+}
 
-// + -
+let num = 10;
+while (num > 0) {
+  num -= 2;
+  console.log(num);
+}
 
-a = +false
-console.log(typeof a)
-console.log(a)
