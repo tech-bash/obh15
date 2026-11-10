@@ -1,111 +1,72 @@
-//stack memory = used to manage function execution contexts and also their local data
+// Arrays -> it stores multiple values in a single variable
 
-// let a = 10;
-// let b = 20;
-// // globally 
-// function add() {
-//     let x =5;
-//     let y = 15;
+// let students = ["pawan", 7, 5, "pr"] // arrray of strings, before it was array of numbers
 
-//     console.log(x + y);
-//     product()
+// // console.log(students);
+
+// console.log(typeof students[1])
+
+
+// array declarations 
+
+// // array literal
+// let fruits = ["apple", "mango", "Banana"]
+
+// // empty array
+
+// let numbers = [1, 2]
+
+// fruits[1] = "pineapple" // updating the present value inside the array
+// fruits[2] = 7
+
+// // it creates an empty slots between the previous last element and index 7
+// fruits[5] = "pratiksha"
+
+// // // array constructor
+
+// // let values = new Array(10, 20, 30)
+
+
+// console.log(fruits)
+
+
+// // length 
+
+// console.log(fruits[fruits.length - 1])
+
+// whatever the length of the array is for the indexing, you'll always go upto length - 1.
+// length will give the number of array slots upto the last index plus one, not necessarily the number of populated elements
+
+//looping inside array
+
+let arr = [10, 20, 30, 40, 50]
+
+
+// for(let i = 0; i< arr.length; ++i) {
+//     console.log(arr[i])
+// }
+console.log(arr.length)
+// arr.push(90) // add the value to the last present index + 1 i.e it will add the value to the right first index of the last index
+// arr.push(100)
+
+// let removed = arr.pop() // it removes the last element from the array and modifies the array
+
+// console.log(arr)
+// console.log(removed)
+
+// arr.unshift(5) // add the element/value to the beginning of the array
+// arr.unshift(1)
+
+let removed = arr.shift() // removes the first element of the array
+console.log(arr)
+console.log(removed)
+
+
+// for(let x of arr) {
+//     console.log( x)
 // }
 
-// function product(){
-//     let o = 10
-//     let m = 5
-//     console.log(o*m)
-// }
 
-// add()
+arr = [-100, 100, -100, 100, 100 , 50 ,89, 900] // find me the sum of all the elements in the array 
 
-// scope -> defines where a variable can be accessed in my Javascript
-
-// let name = "rahul" // declared globally so it can be accessed inside and outside the function 
-
-// function greet() {
-//     let age = 22;
-//     var marks = 90; // the variables declared inside the function are called local variables .. 
-
-//     console.log(age)
-//     console.log(marks)
-
-//     function test(){
-//         console.log(age)
-
-//         function test1(){
-//             console.log(age)
-//         }
-
-//         test1()
-//     }
-
-//     test()
-// }
-
-// greet()
-// console.log(age) // function scope, any variable declared using var, let, const inside the function 
-// are accessible within that function, including it's nested blocks
-
-// if(true) {
-//     const a = 10;
-//     var b = 20;
-// }
-
-// console.log(b)
-// console.log(a)
-
-// why? var => function scoped, let, const => blocked scoped
-
-
-// TDZ -> temporal dead zone = it is the period between entering a scope and reaching the let or const
-// declaration
-
-// console.log(a)
-
-// var a = 10
-
-// ***** let const and var all are hoisted, but let and const cannot be accessed before initialization and var has a property
-// that we can access it before intialization
-
-// scope chain => when js cannot find a variable in the current scoope, it(js) searches the outer scope
-
-
-//  let a = 10;
-
-// function outer() {
-//     let b = 20;
-
-//     function inner() {
-//         let c= 30;
-
-//         console.log(a)
-//         console.log(b)
-//         console.log(c)
-//     }
-//     inner()
-// }
-
-// outer()
-
-// variable shadowing -> when an inner scope declares a variable with the same name as outer variable,
-// it shadows the outer variable within that scope.
-
-// let name = "rahul"
-
-// function show() {
-//     let name  = "Amit"
-
-//     console.log(name)
-// }
-
-// show()
-// console.log(name)
-
-// hoisting -> but able to access functions or var variables before js reaches their initialization
-
-hello()
-
-function hello() {
-    console.log("hello")
-}
+// todo-> print me the count of even and odd numbers in the given array
