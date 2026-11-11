@@ -1,72 +1,67 @@
-// Arrays -> it stores multiple values in a single variable
+// Array Day 2
 
-// let students = ["pawan", 7, 5, "pr"] // arrray of strings, before it was array of numbers
-
-// // console.log(students);
-
-// console.log(typeof students[1])
+// slice in arrays-> used to extract a portion of an array without modifying the original array
 
 
-// array declarations 
+let str = ["orange", "animal", "papaya", "apple"] // array of strings
 
-// // array literal
-// let fruits = ["apple", "mango", "Banana"]
+// arr.slice(start, end)
 
-// // empty array
-
-// let numbers = [1, 2]
-
-// fruits[1] = "pineapple" // updating the present value inside the array
-// fruits[2] = 7
-
-// // it creates an empty slots between the previous last element and index 7
-// fruits[5] = "pratiksha"
-
-// // // array constructor
-
-// // let values = new Array(10, 20, 30)
-
-
-// console.log(fruits)
-
-
-// // length 
-
-// console.log(fruits[fruits.length - 1])
-
-// whatever the length of the array is for the indexing, you'll always go upto length - 1.
-// length will give the number of array slots upto the last index plus one, not necessarily the number of populated elements
-
-//looping inside array
-
-let arr = [10, 20, 30, 40, 50]
-
-
-// for(let i = 0; i< arr.length; ++i) {
-//     console.log(arr[i])
-// }
-console.log(arr.length)
-// arr.push(90) // add the value to the last present index + 1 i.e it will add the value to the right first index of the last index
-// arr.push(100)
-
-// let removed = arr.pop() // it removes the last element from the array and modifies the array
-
+// let result = arr.slice(2, 4); // start = slice will consider the starting the index, and it will consider end - 1 index not the end index
+ // 1 and 3 it will not consider 4th index
+// console.log(result);
 // console.log(arr)
-// console.log(removed)
-
-// arr.unshift(5) // add the element/value to the beginning of the array
-// arr.unshift(1)
-
-let removed = arr.shift() // removes the first element of the array
-console.log(arr)
-console.log(removed)
 
 
-// for(let x of arr) {
-//     console.log( x)
+// ** printing order will remain the same in +/- cases, only the start will change 
+
+// console.log(arr.slice(-3)) // if it is positive so the slicing will start from the start 
+
+// // console.log(arr.slice(-3)) // if it is negative so slicing will start from the last 
+
+// // **** for +ve case it is taking the starting index and printing upto last existing +ve index
+// // **** for -ve case it is taking the ending index and printing upto that index from -1
+// // console.log(arr.slice(1, -1))
+
+
+// console.log(arr.slice(-1))
+
+// array of decimal numbers
+
+// //console.log(arr.indexOf(60)) // if it gives -1 that means value is not present inside the array
+// // if duplicates are present, it will print the first index that is having the matched value
+// // this function returns the index of the found value, 
+
+// // arr[90] values can be undefined
+
+// let index = arr.indexOf(20) // 1
+
+// while(index !== -1) {
+//     console.log(index);
+//     // update the index
+//     index = arr.indexOf(20, index + 1) // 2, 5
 // }
 
 
-arr = [-100, 100, -100, 100, 100 , 50 ,89, 900] // find me the sum of all the elements in the array 
 
-// todo-> print me the count of even and odd numbers in the given array
+// let arr = [10, NaN, 30, 40] 
+
+// // includes -> it will tell that whether the value is present or not i.e it will return either true for found and false for not found
+
+// console.log(arr.includes(NaN))
+
+// // *** indexOf cannot detect NaN, includes can detect NaN.
+
+
+let arr1 = [10, 20, 30]
+let arr2 = [50, "string", "string11"]
+
+let result = arr1.concat(arr2)
+
+// console.log(arr1.concat(arr2))
+
+let a = [1,2];
+let b = [3,5]
+let c = [6,8]
+
+console.log(b.concat(a,c))
