@@ -1,25 +1,34 @@
-// slice -> extracts elemenets and doesn't modify the original array
+// shallow copy and deep copy ..
 
-// splice -> can insert, delete and replace elements and modifies the original array
+// reference copying
+// let arr1  = [10, 20, 30, 40]
 
-// arry.splice(startIndex, deleteCount, item1, item2, .......)
+// let arr2 = arr1;
+
+// arr1.push(50)
+
+// console.log(arr1)
+// console.log(arr2)
 
 
-//
+// shallow copy -> creates a new outer array, ** but nested arrays and objects are still shared
 
-// let result = arr.splice(2,3) // the removed elements are returned
+// let arr1 = [10, 20, [30, 40]]; // nested array
 
-// // if you call splice with two parameters so splice will only and only delete number of elements mentioned in the param starting from 
-// // index mentioned in the first param
+// let arr2 = [...arr1]
 
-// arr.splice(2,3)
-// console.log(arr)
+// arr1[2][1] = 300
 
-// insert using splice
+// console.log(arr1)
+// console.log(arr2)
 
-//  let arr = [10, 30, 50, 60, 90]
+// deep copy -> creates independent copies of arrays/objects** even the nested ones
 
-//  //arr.splice(1, 2, 100, 200) // at index 2 add 30 and the element present will automatically shift to the next index
-//  let result = arr.splice(-5) // want to delete the last element
-// console.log(result)
-//  console.log()
+let arr1 = [10, 20, [30, 40]]
+
+let arr2 = structuredClone(arr1);
+
+arr2[2][0] = 900
+
+console.log(arr1)
+console.log(arr2)
