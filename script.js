@@ -1,34 +1,50 @@
-// shallow copy and deep copy ..
+// let str = " " // char
+// // console.log(str.length) // length of string
 
-// reference copying
-// let arr1  = [10, 20, 30, 40]
+// let str1 = 'string' // string- combination of characters
 
-// let arr2 = arr1;
+// str1[0] = 'u' // after updating the first index
+// str1 = "nothing"
+// // ** string is immutable -> cannot change the value of that string once assigned
+// console.log(str1)
 
-// arr1.push(50)
+// let len = str1.length // length of string
+// console.log(len)
 
-// console.log(arr1)
-// console.log(arr2)
+// for(let st of str1) {
+//     console.log(st)
+// }
+
+// console.log(typeof str1)
+// console.log(str1.at(3))
+
+// string literal
+
+let str2 = "Bhavy Airi"
+let str = "             everybody had a great diwali.   "
+// trailing spaces, .trim()-> removes the trailing spaces
+
+let a = 10
+let b = 20
+
+// let result = `
+// product = ${a*b}
+// sum = ${a+b}
+// divide = ${a/b}
+// `
+
+let arr = [1,2,3]
+
+console.log(typeof arr) // obj
+
+result = arr
+
+console.log(typeof arr, arr) // obj
+console.log(typeof result, result)
 
 
-// shallow copy -> creates a new outer array, ** but nested arrays and objects are still shared
+arr = "String"
 
-// let arr1 = [10, 20, [30, 40]]; // nested array
+console.log(typeof arr)// str
 
-// let arr2 = [...arr1]
-
-// arr1[2][1] = 300
-
-// console.log(arr1)
-// console.log(arr2)
-
-// deep copy -> creates independent copies of arrays/objects** even the nested ones
-
-let arr1 = [10, 20, [30, 40]]
-
-let arr2 = structuredClone(arr1);
-
-arr2[2][0] = 900
-
-console.log(arr1)
-console.log(arr2)
+// you guys have to reverse a string without for loop, using inbuilt functions only
