@@ -1,32 +1,57 @@
-// let str = "hello i'm \n hello \t anything  \"hello \" "
+// object -> collection of key value pairs
 
-// let st = "hello im ragahv \r raghav \b rlaejldjfl"
+// {} => means we are declaring or defining an object
+// when defining object, {} -> needs key value pairs or pair
+// {} -> whenever comes into code, js considers it to be object
+let car = {
+    bmw : {
+        color : "black",
+        ts : 280,
+        name : "m8",
+        message: "I just bought this car the name is: " + this.name
+    },
+    merc : {
+        colour : "red",
+        ts : 220,
+        name : "amg"
+    },
+
+    audi : {
+        color : "green",
+        ts : 280,
+        name : "q8"
+    }
+}
+// console.log(car.audi.color , car.audi.name);
+
+// for(let k in car){
+//     console.log(car[k].ts,car[k].name)
+// }
 
 
-// // "", '', `` -> all are special chars these are used to create a string
-// // [], {}
+let calc = {
+  sum: {
+        a: 10,
+        b: 20,
+        name: "Bhavy",
+        answer: "hi : " ,
+        answer1: function () {
+            console.log(this.a + this.b)
+            return this.a + this.b
+        }, // answer 1 is a method of my sum objec
+        answer2: function() {
+            return this.a * this.b
+        },// answer2 is a method
+        answer3: () => {
+            return this.a + this.b
+        }
+    }
+} // this -> refers to the surrounding object and when called direclty inside the
+// prop -> this will not be able to call the surroundings(the object)
+//this used only inside object methods
 
-//  let arr = [1,2, [3,4]]
+console.log(calc.sum.answer2())
 
-// // \ -> are called escape sequences, this manipulate all the characters/string you have
-// // after the '\'
-// let res = "hello i'm  \t \"Bhavy\" "
 
-// console.log(st)
 
-// let str1 = "i am bhavy am a software engineer and instructor\r raghav is a good boy"
-// console.log(str1)
-
-// let str = "    Array classes has been completed.        "
-
-// console.log(str.trimEnd())
-
-let str = "abcdefg"
-
-// padStart 
-
-console.log(str.padEnd(str.length + 2, 12357785848))
-
-// first parameter -> is the parameter you want your string's length to be updated to 
-let stri = " i am good in the class";
-console.log(stri.split(" ").reverse().join(" "))
+//nested objects
